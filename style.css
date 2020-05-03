@@ -1,0 +1,493 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ /*---------------------------------------------*/
+
+body {
+  width: 100%;
+  list-style: none;
+  cursor: default;
+}
+
+.fade {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.7;
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+
+.up-btn {
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  right: 50px;
+  color: white;
+  font-size: 50px
+}
+
+.up {
+  background: #1b0035;
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+#header-top {
+  height: 70px;
+  background-color: #1b0035;
+}
+
+#header-logo h1{
+  float: left;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 40px;
+  line-height: 70px;
+  padding-left: 50px;
+}
+
+#header-list ul{
+  padding-right: 40px;
+  float:right;
+  color: white;
+}
+
+#header-list li {
+  float: left;
+  font-size: 20px;
+  line-height: 70px;
+  font-weight: bold;
+  font-family: 'Yu Gothic UI',sans-serif;
+  padding: 0 0px;
+}
+
+#header-list span{
+  padding: 0 20px;
+}
+
+#header-main {
+  width: 100%;
+  height: 625px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/05/12/58/computer-2583383_960_720.jpg");
+  background-size: cover;
+  color: white;
+}
+
+#header-main-container {
+  padding-top: 100px;
+  filter: blur(0px);
+}
+
+#header-main-container h3{
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  text-align: center;
+
+}
+
+#header-main-container h2{
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 120px;
+  letter-spacing: 15px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.top-btn {
+  display: block;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.top-btn p{
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 24px;
+  padding: 20px 80px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 30px;
+  display: inline-block;
+  color: white;
+}
+
+.top-btn p:hover {
+  opacity: 0.9;
+}
+
+.modal {
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-weight: bold;
+  background: #f2f2f2;
+  color: #000;
+  border-radius: 15px;
+  width: 32%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  position: fixed;
+  top:120px;
+  left: 450px;
+  z-index: 16;
+  display: none;
+  text-align: left;
+
+}
+
+.modal h2 {
+  font-size: 35px;
+  padding-top: 25px;
+  padding-left: 130px;
+}
+
+.modal p{
+  padding-left: 65px;
+}
+
+.modal span {
+  background: #ff952b;
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  margin: 0 10px;
+}
+
+.time {
+  font-size: 44px;
+  color: #000;
+  position: relative;
+  top: -30px;
+  left: 380px;
+}
+
+.input-box{
+  width: 60%;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 3% 15%;
+}
+
+.radio-container{
+  padding-left: 63px;
+  letter-spacing: 3px;
+}
+
+.input-radio {
+  margin: 6px 0;
+
+}
+
+.input-btn {
+  width: 50%;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 3% 25%;
+  background: #e3e3e3;
+}
+
+#section-1 {
+  text-align: center;
+
+}
+
+.black {
+  transform: skewY(-4deg);
+  transform-origin: bottom left;
+  position: relative;
+  top: 150px;
+  z-index: -1;
+  width:100%;
+  height:150px;
+  background-color: #1b0035;
+  display: none;
+}
+
+#section-1 h2{
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 60px;
+  letter-spacing: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  margin: 60px 0 60px 0px;
+  display: inline-block;
+  color: black;
+}
+
+#section-1-container {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 50px 100px;
+}
+
+.section-1-item {
+  width: 33%;
+}
+
+.item-icon {
+  font-size: 60px;
+  padding: 45px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.section-1-item h3{
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 24px;
+  letter-spacing: 5px;
+  padding: 20px 0;
+}
+
+#section-1 p{
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  padding: 10px 0;
+}
+
+#section-2{
+  width: 100%;
+  text-align: center;
+}
+
+#section-2 h2 {
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 60px;
+  letter-spacing: 7px;
+  border-bottom: 2px solid black;
+  padding: 10px 0 5px 0;
+  color:black;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.black2 {
+  transform: skewY(4deg);
+  transform-origin: bottom left;
+  position: relative;
+  top:150px;
+  z-index: -1;
+  width:100%;
+  height:150px;
+  background-color: #1b0035;
+  display: none;
+}
+
+#section-2-container {
+  font-family: 'Yu Gothic UI',sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.section-2-item {
+  width: 40%;
+  height: 0%;
+}
+
+.section-2-item-container {
+  width: 90%;
+  margin: 5%;
+  border: solid 1.2px #a7a7a7;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.item1 {
+  background-color: #ff6666;
+}
+
+.item2 {
+  background-color: #764ba2;
+}
+
+.item3 {
+  background-color: #ff9b37;
+}
+
+.item4 {
+  background-color: #3198ff;
+}
+
+.section-2-item-containerr:hover {
+  opacity: 0.6;
+}
+
+.section-2-item-container h3{
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding-top: 5%;
+  color: white;
+}
+
+
+.language img {
+  width: 25%;
+  margin: 3% 3%;
+  border-radius: 0%;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.section-2-item-container p{
+  font-size: 23px;
+  display: inline-block;
+  color: white;
+  margin-bottom: 4%;
+}
+
+#bot-btn {
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#bot-btn p{
+  font-family: 'Yu Gothic UI',sans-serif;
+  font-size: 28px;
+  letter-spacing: 10px;
+  padding: 20px 160px;
+  margin-top: 50px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 30px;
+  display: inline-block;
+  color: white;
+}
+
+#bot-btn p:hover {
+  opacity: 0.9;
+}
+
+#main table{
+  width: 70%;
+  height: 350px;
+  margin: 100px auto;
+  background: #fcfcfc;
+  box-shadow: 0px 0px 6px black;
+}
+
+#main th,#main td{
+  font-size: 24px;
+  text-align: center;
+  border: 2px solid #5f5f5f;
+  line-height: 86px;
+}
+
+#main th{
+  background: #dbdbdb;
+}
+
+#q {
+  width: 100%;
+  padding: 0 20%;
+  box-sizing: border-box;
+}
+
+.q-item-container {
+  background: #e6e6e6;
+  padding: 10px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 3px 3px 5px 3px gray;
+}
+
+.q-item-container span {
+  color: white;
+  font-size: 13px;
+  float: right;
+  background: #000;
+
+  padding: 1px  2px;
+}
+
+.q-item-container p{
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.q-hide {
+  display: none;
+}
+
+footer {
+  background-color: #1b0035;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin-top: 80px;
+}
+
+footer h2{
+  color: white;
+  font-weight: bold;
+  letter-spacing: 8px;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1025px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
