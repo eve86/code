@@ -496,7 +496,7 @@ footer h2{
 }
 
 @media screen and (max-width: 767px) {
-    /* #header-logo {
+  #header-logo {
     padding: 0;
     margin: 0;
     position: absolute;
@@ -504,9 +504,9 @@ footer h2{
     transform: translateX(-50%);
   }
   #header-logo h1 {
-    font-size: 60px
-  } */
-  #header-top {
+    font-size: 50px
+  }
+  #header-list {
     display: none;
   }
   #header-main-container {
@@ -516,7 +516,7 @@ footer h2{
     font-size: 14px;
   }
   #header-main-container h2 {
-    font-size: 100px;
+    font-size: 80px;
   }
   #section-1 h2 {
     font-size: 36px;
