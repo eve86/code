@@ -1,4 +1,4 @@
-$(function () {
+
   $(".btn").click(function () {
     $(".fade").fadeIn();
     $(".modal").fadeIn();
@@ -34,4 +34,3 @@ $(function () {
     return false;
   });
 
-});
