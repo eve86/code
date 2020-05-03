@@ -132,7 +132,7 @@ body {
 }
 
 #header-main-container {
-  padding-top: 100px;
+  padding-top: 13%;
 }
 
 #header-main-container h3{
@@ -180,7 +180,7 @@ body {
   background: #f2f2f2;
   color: #000;
   border-radius: 15px;
-  width:50%;
+  width:40%;
   margin: 50px auto;
   padding-top: 80px;
   padding-bottom: 50px;
@@ -203,8 +203,7 @@ body {
 }
 
 .modal p{
-
-  padding-left: 65px;
+  padding-left: 20%;
 }
 
 .modal span {
@@ -224,14 +223,14 @@ body {
   right: 5%;
 }
 .input-box{
-  width: 60%;
+  width: 50%;
   padding: 5px;
   border-radius: 5px;
-  margin: 3% 15%;
+  margin: 3% 20%;
 }
 
 .radio-container{
-  padding-left: 63px;
+  padding-left: 35%;
   letter-spacing: 3px;
 }
 
@@ -491,7 +490,9 @@ footer h2{
 }
 
 @media screen and (max-width: 1025px) {
-
+  .modal {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -502,8 +503,14 @@ footer h2{
     left: 50%;
     transform: translateX(-50%);
   }
+  #header-logo h1 {
+    font-size: 60px
+  }
   #header-list {
     display: none;
+  }
+  #header-main-container {
+  padding-top: 35%;
   }
   #header-main-container h3 {
     font-size: 14px;
@@ -557,4 +564,20 @@ footer h2{
   footer h2 {
     display: none;
   }
+  .modal {
+    width: 80%;
+  }
+  .modal h2 {
+    font-size: 28px;
+  }
+  .modal p {
+    font-size: 12px;
+  }
+  .input-btn {
+    padding: 10px 20px;
+  }
+  .radio-container{
+    padding-left: 20%;
+  }
 }
+
