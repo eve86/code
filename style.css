@@ -496,7 +496,7 @@ footer h2{
 }
 
 @media screen and (max-width: 767px) {
-  #header-logo {
+    /* #header-logo {
     padding: 0;
     margin: 0;
     position: absolute;
@@ -505,8 +505,8 @@ footer h2{
   }
   #header-logo h1 {
     font-size: 60px
-  }
-  #header-list {
+  } */
+  #header-top {
     display: none;
   }
   #header-main-container {
