@@ -72,8 +72,8 @@ body {
 .up-btn {
   position: fixed;
   z-index: 10;
-  bottom: 50px;
-  right: 50px;
+  bottom: 5%;
+  right: 5%;
   color: white;
   font-size: 50px
 }
@@ -89,6 +89,11 @@ body {
   background-color: #1b0035;
 }
 
+
+#header-logo {
+  padding-left: 50px;
+}
+
 #header-logo h1{
   float: left;
   color: white;
@@ -96,7 +101,6 @@ body {
   letter-spacing: 2px;
   font-size: 40px;
   line-height: 70px;
-  padding-left: 50px;
 }
 
 #header-list ul{
@@ -120,15 +124,15 @@ body {
 
 #header-main {
   width: 100%;
-  height: 625px;
+  height: 100vh;
   background-image: url("https://cdn.pixabay.com/photo/2017/08/05/12/58/computer-2583383_960_720.jpg");
+  background-attachment: fixed;
   background-size: cover;
   color: white;
 }
 
 #header-main-container {
   padding-top: 100px;
-  filter: blur(0px);
 }
 
 #header-main-container h3{
@@ -176,12 +180,14 @@ body {
   background: #f2f2f2;
   color: #000;
   border-radius: 15px;
-  width: 32%;
-  margin: 0 auto;
+  width:50%;
+  margin: 50px auto;
+  padding-top: 80px;
   padding-bottom: 50px;
   position: fixed;
-  top:120px;
-  left: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   z-index: 16;
   display: none;
   text-align: left;
@@ -189,12 +195,15 @@ body {
 }
 
 .modal h2 {
-  font-size: 35px;
-  padding-top: 25px;
-  padding-left: 130px;
+  position: absolute;
+  font-size: 40px;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .modal p{
+
   padding-left: 65px;
 }
 
@@ -210,11 +219,10 @@ body {
 .time {
   font-size: 44px;
   color: #000;
-  position: relative;
-  top: -30px;
-  left: 380px;
+  position: absolute;
+  top: 3%;
+  right: 5%;
 }
-
 .input-box{
   width: 60%;
   padding: 5px;
@@ -337,7 +345,6 @@ body {
 
 .section-2-item {
   width: 40%;
-  height: 0%;
 }
 
 .section-2-item-container {
@@ -415,7 +422,6 @@ body {
 
 #main table{
   width: 70%;
-  height: 350px;
   margin: 100px auto;
   background: #fcfcfc;
   box-shadow: 0px 0px 6px black;
@@ -425,7 +431,7 @@ body {
   font-size: 24px;
   text-align: center;
   border: 2px solid #5f5f5f;
-  line-height: 86px;
+  line-height: 80px;
 }
 
 #main th{
@@ -489,5 +495,66 @@ footer h2{
 }
 
 @media screen and (max-width: 767px) {
-
+  #header-logo {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #header-list {
+    display: none;
+  }
+  #header-main-container h3 {
+    font-size: 14px;
+  }
+  #header-main-container h2 {
+    font-size: 100px;
+  }
+  #section-1 h2 {
+    font-size: 36px;
+  }
+  #section-1 p {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  #section-1-container {
+    padding: 50px 10px;
+    flex-direction: column;
+  }
+  .section-1-item {
+  width: 100%;
+  }
+  #section-2 h2 {
+    font-size: 36px;
+  }
+  .section-2-item {
+    width: 90%;
+  }
+  #bot-btn p {
+    font-size: 26px;
+    padding: 20px 45px;
+    letter-spacing: 5px;
+  }
+  #q {
+    padding: 0 10px;
+  }
+  #table-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: scroll;
+  }
+  #main table {
+    width: 130%;
+  }
+  #main th,#main td {
+    font-size: 18px;
+    line-height: 50px;
+  }
+  footer {
+    height: 60px;
+  }
+  footer h2 {
+    display: none;
+  }
 }
