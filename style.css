@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,21 +68,6 @@ body {
   display: none;
 }
 
-.up-btn {
-  position: fixed;
-  z-index: 10;
-  bottom: 5%;
-  right: 5%;
-  color: white;
-  font-size: 50px
-}
-
-.up {
-  background: #1b0035;
-  border-radius: 50%;
-  padding: 10px 20px;
-}
-
 #header-top {
   height: 70px;
   background-color: #1b0035;
@@ -139,7 +119,10 @@ body {
 }
 
 #header-main-container {
-  padding-top: 13%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 #header-main-container h3{
@@ -184,74 +167,50 @@ body {
 .modal {
   font-family: 'Yu Gothic UI',sans-serif;
   font-weight: bold;
-  background: #f2f2f2;
+  background: white;
   color: #000;
-  border-radius: 15px;
-  width:40%;
+  border-radius: 5px;
+  width:30%;
   margin: 50px auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   z-index: 16;
   display: none;
-  text-align: left;
-
+  text-align: center;
 }
 
 .modal h2 {
-  position: absolute;
-  font-size: 40px;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
+  color: #414141;
+  font-size: 1.5rem;
 }
 
-.modal p{
-  padding-left: 20%;
-}
-
-.modal span {
-  background: #ff952b;
-  padding: 2px;
-  border-radius: 5px;
-  color: white;
-  font-size: 13px;
-  margin: 0 10px;
-}
-
-.time {
-  font-size: 44px;
-  color: #000;
-  position: absolute;
-  top: 3%;
-  right: 5%;
-}
 .input-box{
+  font-size: 0.9rem;
   width: 50%;
-  padding: 5px;
-  border-radius: 5px;
-  margin: 3% 20%;
+  padding: 10px;
+  margin: 3% auto;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #494949;
 }
 
-.radio-container{
-  padding-left: 35%;
-  letter-spacing: 3px;
-}
-
-.input-radio {
-  margin: 6px 0;
-
+select {
+  margin: 3% auto;
 }
 
 .input-btn {
+  font-size: 0.9rem;
+  color: white;
   width: 50%;
   padding: 10px;
-  border-radius: 15px;
-  margin: 3% 25%;
-  background: #e3e3e3;
+  margin: 3% auto;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  outline: none;
+  border: none;
 }
 
 #section-1 {
@@ -277,7 +236,7 @@ body {
   letter-spacing: 5px;
   padding-bottom: 5px;
   border-bottom: 2px solid black;
-  margin: 60px 0 60px 0px;
+  margin: 120px 0 80px 0;
   display: inline-block;
   color: black;
 }
@@ -286,7 +245,7 @@ body {
   width: 100%;
   display: flex;
   box-sizing: border-box;
-  padding: 50px 100px;
+  padding:30px 100px;
 }
 
 .section-1-item {
@@ -327,7 +286,7 @@ body {
   padding: 10px 0 5px 0;
   color:black;
   display: inline-block;
-  margin-bottom: 40px;
+  margin: 120px 0 80px 0;
 }
 
 .black2 {
@@ -415,11 +374,11 @@ body {
   font-size: 28px;
   letter-spacing: 10px;
   padding: 20px 160px;
-  margin-top: 50px;
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 30px;
   display: inline-block;
   color: white;
+  margin: 20px 0;
 }
 
 #bot-btn p:hover {
@@ -428,7 +387,7 @@ body {
 
 #main table{
   width: 70%;
-  margin: 100px auto;
+  margin: 120px auto;
   background: #fcfcfc;
   box-shadow: 0px 0px 6px black;
 }
@@ -454,7 +413,7 @@ body {
   background: #e6e6e6;
   padding: 10px;
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
   box-shadow: 3px 3px 5px 3px gray;
 }
 
