@@ -12,21 +12,18 @@
 <body>
   <div class="modal">
     <h2>お申し込み</h2>
-    <i class="fas fa-times time"></i>
-    <p>名前<span>必須</span></p>
-    <input class="input-box" type="text">
-    <p>メールアドレス<span>必須</span></p>
-    <input class="input-box" type="text"><br>
-    <div class="radio-container">
-      <input name="1" class="input-radio" type="radio">フロントエンドコース<br>
-      <input name="1" class="input-radio" type="radio">バッグエンドコース<br>
-      <input name="1" class="input-radio" type="radio">アプリ開発コース　<br>
-      <input name="1" class="input-radio" type="radio">AIコース
-    </div>
+    <input class="input-box" type="text" placeholder="名前">
+    <input class="input-box" type="text" placeholder="メールアドレス">
+    <input class="input-box" type="password" placeholder="パスワード"><br>
+    コース<select name="sel">
+      <option value="a">フロントエンドコース</option>
+      <option value="b">バックエンドコース</option>
+      <option value="c">アプリ開発コース</option>
+      <option value="d">AIコース</option>
+    </select><br>
     <input class="input-btn" type="submit">
   </div>
   <div class="fade"></div>
-  <a href="#"><div class="up-btn"><i class="fas fa-angle-up up"></i></div></a>
   <header>
     <div id="header-top">
       <div id="header-logo">
@@ -55,9 +52,6 @@
       <div id="section-1">
         <div class="black"></div>
         <h2>CODEとは</h2>
-        <p>プログラミングやアプリ開発を学べるプログラミングスクール</p>
-        <p>未経験でも楽しくプログラミングを学べる</p>
-        <p>オンラインでも学べて質問もし放題</p>
         <div id="section-1-container">
           <div class="section-1-item">
             <i class="fas fa-code item-icon"></i>
@@ -72,7 +66,9 @@
             <h3>質問し放題</h3>
           </div>
         </div>
-
+        <p>プログラミングやアプリ開発を学べるプログラミングスクール</p>
+        <p>未経験でも楽しくプログラミングを学べる</p>
+        <p>オンラインでも学べて質問もし放題</p>
       </div>
       <div id="section-2">
         <div class="black2"></div>
